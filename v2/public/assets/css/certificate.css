@@ -1,0 +1,678 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.duringSem2, .fin2, .sum2,
+.duringSem1, .fin1, .sum1, .sumHead {
+    font-size: 1cqw;    
+}
+
+.wrblan1, .r25, .r45, .headr13 {
+    font-weight: 400;
+}
+
+.text-top{
+    font-weight: 800;        
+}
+
+.failed:before,
+.failed1:before {
+    background:#ddd;
+    -webkit-print-color-adjust: exact;
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+tag-name {
+    display: flex;
+    justify-content: space-between !important;
+    width: 80%;
+    margin-bottom: 3px;
+}
+tag-name p {
+    margin-top: 0;
+    margin-left: auto;
+}
+.noBorder * {
+    align-items: baseline;
+}
+.scale {
+    padding: 12px 14px;
+    position: fixed;
+    background: red;
+    right: 16px;
+    bottom: 125px;
+    border-radius: 8px;
+    box-shadow: var(--md-sys-elevation-3);
+}
+.ctm-w { 
+    width: 850px !important;
+}
+
+.failed,
+.failed1 {
+    position:relative;
+}
+
+.table2 *, .result > *, [class*="normal-row"] > *, [class*="sem"] > *, .r2 > *, .r3 > *, .r1, .mark, .header, .angle, .r4 *, .min, .notes {
+    border: 1px solid #000;
+    outline: 1px solid #000;
+}
+
+.ctm-grid {
+    display: grid;
+    gap: 0px 0px;
+}
+
+.cert{
+    direction: ltr;
+    grid-template-columns: 31.5fr 1fr;
+    grid-template-rows: 2fr 3fr repeat(16, 1fr) 3fr 1fr;
+    font-size:1cqw;
+    text-align: center;
+}
+
+.header {
+    grid-template-columns: 3fr 1fr 5.5fr 8.5fr 8.5fr 1fr 5fr;
+    grid-template-rows: 3fr;
+    grid-template-areas:
+        "notes min result sem2 sem1 max angle";
+    grid-area: header;
+    border-bottom:none;
+    outline:none;
+}
+
+.result {
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "resultHeader resultHeader resultHeader resultHeader"
+        "avg avg avg sumT"
+        "writing3 writing3 num3 sumT";
+    grid-area: result;
+}
+
+[class*="headed-row"] {
+    grid-template-columns: 3fr 1fr 5.5fr 8.5fr 8.5fr 1fr 4fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "notes min r4 r3 r2 r1 mark";
+}
+
+.headed-row0 {
+    grid-area: headed-row0;
+}
+
+.headed-row1 {
+    grid-area: headed-row1;
+}
+
+.headed-row2 {
+    grid-area: headed-row2;
+}
+
+.headed-row3 {
+    grid-area: headed-row3;
+}
+
+.headed-row4 {
+    grid-area: headed-row4;
+}
+.headed-row5 {
+    grid-area: headed-row5;
+}
+
+.headed-row6 {
+    grid-area: headed-row6;
+}
+
+.headed-row7 {
+    grid-area: headed-row7;
+}
+
+.headed-row8 {
+    grid-area: headed-row8;
+}
+
+.headed-row9 {
+    grid-area: headed-row9;
+}
+.headed-row10 {
+    grid-area: headed-row10;
+}
+
+[class*="normal-row"] {
+    grid-template-columns: 3fr 1fr 3fr 1fr 1.5fr 3fr 1fr 4.5fr 3fr 1fr 4.5fr 1fr 5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "headr3 headr2 headr13 headr12 headr11 wrblank2 numblank2 blank22 wrblan1 numblank1 blank11 maxHead sumHead";
+}
+
+.normal-row5 {
+    grid-area: normal-row5;
+}
+
+.normal-row11 {
+    grid-area: normal-row11;
+}
+
+.normal-row12{
+    grid-area: normal-row12;
+}
+
+.normal-row2 {
+    grid-area: normal-row2;
+}
+
+.normal-row3 {
+    grid-area: normal-row3;
+}
+
+.normal-row0 {
+    grid-area: normal-row0;
+}
+.normal-row1 {
+    grid-area: normal-row1;
+}
+.normal-row2 {
+    grid-area: normal-row2;
+}
+
+.resultHeader {
+    grid-area: resultHeader;
+}
+
+.notes {
+    grid-area: notes;
+}
+
+.min {
+    grid-area: min;
+}
+
+.avg {
+    grid-area: avg;
+}
+
+.sumT {
+    grid-area: sumT;
+    white-space: break-spaces;
+}
+
+.num3 {
+    grid-area: num3;
+}
+
+.writing3 {
+    grid-area: writing3;
+}
+
+.sem2 {
+    grid-template-columns: 2fr 1fr 1fr 1.5fr 1.5fr 1.5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "sem22 sem22 sem22 sem22 sem22 sem22"
+        "avg2 avg2 avg2 sum2 fin2 duringSem2"
+        "writing2 writing2 num2 sum2 fin2 duringSem2";
+    grid-area: sem2;
+}
+
+.sem22 {
+    grid-area: sem22;
+}
+
+.avg2 {
+    grid-area: avg2;
+}
+
+.sum2 {
+    grid-area: sum2;
+}
+
+.fin2 {
+    grid-area: fin2;
+}
+
+.duringSem2 {
+    grid-area: duringSem2;
+}
+
+.num2 {
+    grid-area: num2;
+}
+
+.writing2 {
+    grid-area: writing2;
+}
+
+.sem1 {
+    grid-template-columns: 3fr 1fr 1.5fr 1.5fr 1.5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "sem12 sem12 sem12 sem12 sem12"
+        "avg1 avg1 sum1 fin1 duringSem1"
+        "writing1 num1 sum1 fin1 duringSem1";
+    grid-area: sem1;
+}
+
+.sem12 {
+    grid-area: sem12;
+}
+
+.avg1 {
+    grid-area: avg1;
+}
+
+.sum1 {
+    grid-area: sum1;
+}
+
+.fin1 {
+    grid-area: fin1;
+}
+
+.duringSem1 {
+    grid-area: duringSem1;
+}
+
+.num1 {
+    grid-area: num1;
+}
+
+.writing1 {
+    grid-area: writing1;
+}
+
+.max {
+    grid-area: max;
+}
+
+.angle {
+    grid-area: angle;
+}
+
+.mark {
+    grid-area: mark;
+    padding: 0;
+    background: none;
+    border-right: none !important;
+    font-size: 1cqw;
+}
+
+.marknam {
+    grid-area: marknam;
+}
+
+.heading1 {
+    grid-area: heading1;
+    border-bottom-width: 2px !important;
+}
+.heading2 {
+    grid-area: heading2;
+}
+
+.heading1, .heading2 {    
+    display: grid !important;
+    place-self: center;
+    place-content: center;
+    width: calc(100% - 1px) !important;
+    scale: 0.98;
+    outline: 1px solid #000;
+    border-right: none !important;
+}
+
+.header .max, .header .min {
+    border-left: none !important;
+    outline: 1px solid #000;
+    border: 1px solid #000;
+}   
+
+.r1 {
+    grid-area: r1;
+}
+
+.r2 {
+    grid-template-columns: 3fr 1fr 1.5fr 1.5fr 1.5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "r25 r34 rr23 r22 r21";
+    grid-area: r2;
+}
+
+.r21 {
+    grid-area: r21;
+}
+
+.r22 {
+    grid-area: r22;
+}
+
+.rr23 {
+    grid-area: rr23;
+}
+
+.r34 {
+    grid-area: r34;
+}
+
+.r25 {
+    grid-area: r25;
+}
+
+.r3 {
+    grid-template-columns: 3fr 1fr 1.5fr 1.5fr 1.5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "r35 r43 r33 r32 r31";
+    grid-area: r3;
+}
+
+.r31 {
+    grid-area: r31;
+}
+
+.r32 {
+    grid-area: r32;
+}
+
+.r33 {
+    grid-area: r33;
+}
+
+.r43 {
+    grid-area: r43;
+}
+
+.r35 {
+    grid-area: r35;
+}
+
+.r4 {
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "r45 r45 r42 r41";
+    grid-area: r4;
+}
+
+.r41 {
+    grid-area: r41;
+}
+
+.r42 {
+    grid-area: r42;
+}
+
+.r45 {
+    grid-area: r45;
+}
+
+.r5 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "notes notes notes min";
+    grid-area: r5;
+}
+
+.notes {
+    grid-area: notes;
+}
+
+.sumHead {
+    grid-area: sumHead;
+}
+
+.maxHead {
+    grid-area: maxHead;
+}
+
+.blank11 {
+    grid-area: blank11;
+}
+
+.wrblan1 {
+    grid-area: wrblan1;
+}
+
+.numblank1 {
+    grid-area: numblank1;
+}
+
+.blank2 {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "wrblank2 wrblank2 numblank2 blank22 blank22 blank22";
+    grid-area: blank2;
+}
+
+.blank22 {
+    grid-area: blank22;
+}
+
+.numblank2 {
+    grid-area: numblank2;
+}
+
+.wrblank2 {
+    grid-area: wrblank2;
+}
+
+.headr1 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "headr13 headr13 headr12 headr11";
+    grid-area: headr1;
+}
+
+.headr11 {
+    grid-area: headr11;
+}
+
+.headr12 {
+    grid-area: headr12;
+}
+
+.headr13 {
+    grid-area: headr13;
+}
+
+.headr2 {
+    grid-area: headr2;
+}
+
+.headr3 {
+    grid-area: headr3;
+}
+
+.table2 {
+    grid-template-columns: 7fr 5.5fr 5.5fr 4fr 2.5fr 2fr 2fr 4fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+        "management finresult t-1-5 t-1-4 t-1-3 t-1-3 t-1-2 t-1-1"
+        "management finresult t-1-5 t-1-4 t-1-3-2 t-1-3-1 t-1-2 t-1-1"
+        "management final1 final2 per1 qq1 q1 d1 f1"
+        "management final1 final2 per2 qw2 q2 d2 f2"
+        "management final1 final2 per3 qq3 q3 d3 f3";
+    grid-area: table2;
+    border:none;
+}
+
+.t-1-1 {
+    grid-area: t-1-1;
+}
+
+.t-1-2 {
+    grid-area: t-1-2;
+}
+
+.t-1-3 {
+    grid-area: t-1-3;
+}
+
+.t-1-3-1 {
+    grid-area: t-1-3-1;
+}
+
+.t-1-3-2 {
+    grid-area: t-1-3-2;
+}
+
+.t-1-4 {
+    grid-area: t-1-4;
+}
+
+.t-1-5 {
+    grid-area: t-1-5;
+}
+
+.finresult {
+    grid-area: finresult;
+}
+
+.management {
+    grid-area: management;
+}
+
+.final1 {
+    grid-area: final1;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 6fr;
+    grid-template-areas:
+        "x1"
+        "x2"
+        "x3";
+    border: none;
+}
+
+.final2 {
+    grid-area: final2;
+}
+
+.per1 {
+    grid-area: per1;
+}
+
+.per2 {
+    grid-area: per2;
+}
+
+.per3 {
+    grid-area: per3;
+}
+
+.d1 {
+    grid-area: d1;
+}
+
+.d2 {
+    grid-area: d2;
+}
+
+.d3 {
+    grid-area: d3;
+}
+
+.f1 {
+    grid-area: f1;
+}
+
+.f2 {
+    grid-area: f2;
+}
+
+.f3 {
+    grid-area: f3;
+}
+
+.q1 {
+    grid-area: q1;
+}
+
+.q2 {
+    grid-area: q2;
+}
+
+.q3 {
+    grid-area: q3;
+}
+
+.qq1 {
+    grid-area: qq1;
+}
+
+.qq3 {
+    grid-area: qq3;
+}
+
+.qw2 {
+    grid-area: qw2;
+}
+
+.noBorder {
+    grid-area: noBorder;
+    direction: rtl;
+    display: flex;
+    justify-content: space-around !important;
+}
+
+.text-top {
+    grid-area: text-top;
+    display: block !important;
+    direction: rtl;
+}
+
+.text-top *,
+.noBorder *,
+.text-top,
+.noBorder {
+    border: none;
+}
+
+.noBorder pre {
+    border: none;
+    margin:0;
+}
+
+.final1 * {
+    margin: 0;
+    direction: rtl;
+    justify-content: initial !important;
+    padding-right: 3%;
+}
+
+.heading {
+    grid-area: heading;
+}
+
+.rotate {
+    height: -webkit-fill-available;
+    writing-mode: vertical-rl;
+    rotate: 180deg;
+}
+
+.cert *:not(.ctm-grid, .final1, .text-top) {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.text-top p {
+    margin-bottom: 0;
+}
+
+.cert > *:not(.noBorder, .text-top) {
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+} 
+
+.final2, .per3, .qq3, .q3, .d3 , .f3{
+    border-bottom-width: 1px;
+}
+
+.header, .mark, .heading1, .heading2, .sumHead, .table2 {
+    font-weight: 600;
+}

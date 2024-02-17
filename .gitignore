@@ -1,0 +1,9 @@
+system/
+vendor/
+.vscode/
+.git/
+
+HonorBoard.html
+test.html
+composer.json
+composer.lock
